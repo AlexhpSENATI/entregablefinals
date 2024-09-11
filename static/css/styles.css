@@ -28,11 +28,11 @@
 /* Contenedor de los cards */
 .card-container {
   display: flex;
-  gap: 20px; /* Espacio entre los cards */
-  justify-content: center; /* Centra los cards horizontalmente */
-  align-items: center; /* Alinea los cards verticalmente */
-  flex-wrap: wrap; /* Permite que los cards se envuelvan en varias líneas si es necesario */
-  padding: 20px; /* Espacio interior para el contenedor */
+  gap: 35px; /* Espacio entre los cards */
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  padding: 20px; 
 }
 
 /* Card redondo */
@@ -44,11 +44,11 @@
   height: 220px; /* Altura total para incluir el texto */
   transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Suaviza las transiciones */
   background-color: #f8f9fa; /* Color de fondo por defecto */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 10px; /* Espacio interior */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: inherit; /* Hereda el color del texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+  border-radius: 10px; 
+  padding: 10px; 
+  text-decoration: none; 
+  color: inherit; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .round-card-new img {
@@ -56,7 +56,7 @@
   height: 150px; /* Mantiene la forma redonda */
   border-radius: 50%; /* Hace la imagen redonda */
   object-fit: cover; /* La imagen cubre todo el círculo */
-  margin-bottom: 10px; /* Espacio entre el círculo y el texto */
+  margin-bottom: 15px; /* Espacio entre el círculo y el texto */
 }
 
 .round-card-new:hover {
@@ -66,7 +66,7 @@
 
 .round-card-new h4 {
   margin: 0;
-  font-size: 16px; /* Tamaño del texto */
+  font-size: 19px; /* Tamaño del texto */
   transition: color 0.3s; /* Transición suave para el color */
 }
 
@@ -81,3 +81,23 @@
   font-size: 28px;
   font-weight: bold;
 }
+/* wasap */
+.btn-whatsapp {
+  position: fixed;
+  width: 80px; 
+  height: 80px; 
+  bottom: 20px; 
+  right: 20px; 
+  
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  z-index: 1000;
+}
+
+.btn-whatsapp img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
