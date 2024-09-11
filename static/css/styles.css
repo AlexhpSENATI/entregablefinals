@@ -1,0 +1,83 @@
+#carouselExampleInterval .carousel-item img {
+    width: 100%;
+    height: 600px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el contenedor */
+  }
+  /* sinta de logos  */
+  .logo-carousel-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espacio entre los logos */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    padding: 10px 0;
+    white-space: nowrap; /* Evita que los logos se envuelvan en nuevas líneas */
+    background-color: #141414; /* Color de fondo similar */
+}
+
+.logo-carousel-new img {
+    height: 60px; /* Ajusta el tamaño de los logos */
+    object-fit: contain;
+    transition: transform 0.3s; /* Suaviza la transición al hacer hover */
+}
+
+.logo-carousel-new img:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón sobre los logos */
+}
+/* cards redondos */
+/* Contenedor de los cards */
+.card-container {
+  display: flex;
+  gap: 20px; /* Espacio entre los cards */
+  justify-content: center; /* Centra los cards horizontalmente */
+  align-items: center; /* Alinea los cards verticalmente */
+  flex-wrap: wrap; /* Permite que los cards se envuelvan en varias líneas si es necesario */
+  padding: 20px; /* Espacio interior para el contenedor */
+}
+
+/* Card redondo */
+.round-card-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px; /* Ancho de las cards */
+  height: 220px; /* Altura total para incluir el texto */
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Suaviza las transiciones */
+  background-color: #f8f9fa; /* Color de fondo por defecto */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interior */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Hereda el color del texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+}
+
+.round-card-new img {
+  width: 150px; /* Tamaño del círculo */
+  height: 150px; /* Mantiene la forma redonda */
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* La imagen cubre todo el círculo */
+  margin-bottom: 10px; /* Espacio entre el círculo y el texto */
+}
+
+.round-card-new:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+  background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.round-card-new h4 {
+  margin: 0;
+  font-size: 16px; /* Tamaño del texto */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+.round-card-new:hover h4 {
+  color: #007bff; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Subtítulo centrado arriba de los cards */
+.subtitle {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
